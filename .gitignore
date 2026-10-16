@@ -1,0 +1,8 @@
+# Güvenlik: yanlışlıkla eklenmesin
+*.docx
+*.doc
+*.mp4
+WhatsApp*
+orijinal-fotograflar/
+Thumbs.db
+desktop.ini

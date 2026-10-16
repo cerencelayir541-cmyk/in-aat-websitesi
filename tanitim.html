@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Firma Tanıtım Dosyası</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stil.css">
+  <!--
+    Firma tanıtım dosyası. Tüm içerik ayarlar.js dosyasından otomatik gelir.
+    "PDF olarak kaydet" düğmesi tarayıcının yazdırma penceresini açar; oradan "PDF olarak kaydet" seçilir.
+  -->
+  <style>
+    body { background: var(--gri-2); }
+    .arac { position: sticky; top: 0; z-index: 5; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; align-items: center; padding: 12px 16px; background: var(--lacivert); color: var(--beyaz); font-size: .9rem; }
+    .arac .dugme { padding: .6em 1.1em; }
+    .sayfa { width: min(210mm, 100% - 32px); margin: 24px auto; background: var(--beyaz); box-shadow: 0 8px 30px rgba(11,33,64,.15); }
+    .kapak { position: relative; color: var(--beyaz); background: var(--lacivert) center / cover; padding: 44px 40px 36px; }
+    .kapak::before { content: ""; position: absolute; inset: 0; background: linear-gradient(100deg, rgba(11,33,64,.97), rgba(11,33,64,.8)); }
+    .kapak > * { position: relative; }
+    .kapak .logo-ari { width: 56px; height: 56px; }
+    .kapak h1 { font-size: 2.2rem; margin: 18px 0 6px; }
+    .kapak .kapak-alt { font-size: 1.05rem; opacity: .85; margin: 0; }
+    .kapak .rakamlar { margin-top: 26px; grid-template-columns: repeat(3, 1fr); }
+    .icerik { padding: 32px 40px 40px; }
+    .icerik h2 { font-size: 1.1rem; text-transform: uppercase; letter-spacing: .1em; color: var(--lacivert); border-bottom: 2px solid var(--lacivert); padding-bottom: 6px; margin: 28px 0 14px; }
+    .icerik h2:first-child { margin-top: 0; }
+    .icerik p { color: var(--metin); font-size: .95rem; }
+    .t-hizmetler { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 24px; }
+    .t-hizmetler div { break-inside: avoid; }
+    .t-hizmetler strong { color: var(--lacivert); display: block; }
+    .t-hizmetler span { font-size: .86rem; color: var(--metin-acik); }
+    .t-proje { break-inside: avoid; padding: 12px 0; border-bottom: 1px solid var(--gri-2); }
+    .t-proje:last-child { border-bottom: 0; }
+    .t-proje strong { color: var(--lacivert); }
+    .t-proje small { color: var(--lacivert-3); font-weight: 600; text-transform: uppercase; letter-spacing: .06em; font-size: .72rem; margin-left: 6px; }
+    .t-proje p { margin: 4px 0 0; font-size: .88rem; color: var(--metin-acik); }
+    .t-adimlar { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+    .t-adimlar div { background: var(--gri-1); border-radius: 8px; padding: 12px; font-size: .82rem; color: var(--metin-acik); }
+    .t-adimlar strong { display: block; color: var(--lacivert); font-size: .9rem; }
+    .t-referanslar { columns: 2; padding-left: 18px; margin: 0; font-size: .92rem; }
+    .t-iletisim { background: var(--lacivert); color: var(--beyaz); padding: 24px 40px; display: flex; flex-wrap: wrap; gap: 10px 36px; font-size: .95rem; }
+    .t-iletisim span { opacity: .65; font-size: .75rem; text-transform: uppercase; letter-spacing: .1em; display: block; }
+    @media (max-width: 600px) {
+      .kapak, .icerik, .t-iletisim { padding-left: 20px; padding-right: 20px; }
+      .t-hizmetler, .t-adimlar { grid-template-columns: 1fr; }
+      .t-referanslar { columns: 1; }
+    }
+    @page { size: A4; margin: 0; }
+    @media print {
+      body { background: #fff; }
+      .arac { display: none; }
+      .sayfa { width: auto; margin: 0; box-shadow: none; }
+      * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      .t-adimlar { grid-template-columns: repeat(4, 1fr); }
+    }
+  </style>
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="ari" viewBox="0 0 64 64">
+      <path d="M32 3 57 17.5v29L32 61 7 46.5v-29Z" fill="none" stroke="currentColor" stroke-width="3"/>
+      <ellipse cx="24" cy="24" rx="8" ry="5.5" transform="rotate(-30 24 24)" fill="currentColor" opacity=".45"/>
+      <ellipse cx="40" cy="24" rx="8" ry="5.5" transform="rotate(30 40 24)" fill="currentColor" opacity=".45"/>
+      <ellipse cx="32" cy="36" rx="8.5" ry="12" fill="currentColor"/>
+      <path d="M24.2 33h15.6M23.8 39h16.4" stroke="var(--ari-cizgi, #0b2140)" stroke-width="2.6"/>
+      <circle cx="32" cy="22" r="4.5" fill="currentColor"/>
+      <path d="M30 18.5 27 14M34 18.5 37 14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+    </symbol>
+  </svg>
+
+  <div class="arac">
+    <a href="index.html" class="dugme dugme-cerceve">← Siteye dön</a>
+    <button type="button" class="dugme dugme-acik" onclick="window.print()">PDF olarak kaydet / Yazdır</button>
+  </div>
+
+  <main class="sayfa" id="tanitim"></main>
+
+  <script src="ayarlar.js"></script>
+  <script>
+    (function () {
+      const A = AYARLAR;
+      const k = (s) => String(s || "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+      const tel = (A.iletisim.telefon || "").trim();
+      const eposta = (A.iletisim.eposta || "").trim();
+      const iletisim = [
+        tel && `<div><span>Telefon</span>${k(tel)}</div>`,
+        eposta && `<div><span>E-posta</span>${k(eposta)}</div>`,
+        `<div><span>Hizmet bölgesi</span>${k(A.firma.bolge)} geneli</div>`,
+        A.iletisim.adres && A.iletisim.adres !== A.firma.bolge && `<div><span>Adres</span>${k(A.iletisim.adres)}</div>`
+      ].filter(Boolean).join("");
+      // Hikâyesi olan ilk 4 proje tanıtımda yer alır
+      const projeler = A.projeler.filter((p) => p.hikaye).slice(0, 4);
+
+      document.title = `${A.firma.ad} – Firma Tanıtım Dosyası`;
+      document.getElementById("tanitim").innerHTML = `
+        <header class="kapak" style="background-image:url('gorseller/giris-santiye.jpg')">
+          <svg class="logo-ari" aria-hidden="true"><use href="#ari"/></svg>
+          <h1>${k(A.firma.ad)}</h1>
+          <p class="kapak-alt">${k(A.firma.altBaslik)}</p>
+          <div class="rakamlar">
+            <div><strong>${k(A.firma.deneyimYili)}+</strong><span>Yıllık tecrübe</span></div>
+            <div><strong>${A.referanslar.length}+</strong><span>Kurumsal referans</span></div>
+            <div><strong>${k(A.firma.bolge)}</strong><span>Hizmet bölgesi</span></div>
+          </div>
+        </header>
+        <div class="icerik">
+          <h2>Hakkımızda</h2>
+          <p>${k(A.firma.deneyimYili)} yılı aşkın süredir ${k(A.firma.bolge)} genelinde konutlardan fabrikalara, belediye tesislerinden tarihi yapılara kadar pek çok binada zemin suyu ve yapı güçlendirme çalışmaları yürütüyoruz. Önce sorunun kaynağını tespit ediyor, sonra yapıya ve zemine uygun yöntemi seçiyoruz.</p>
+
+          <h2>Hizmetlerimiz</h2>
+          <div class="t-hizmetler">${A.hizmetler.map((h) => `<div><strong>${k(h.baslik)}</strong><span>${k(h.metin)}</span></div>`).join("")}</div>
+
+          <h2>Öne çıkan projeler</h2>
+          ${projeler.map((p) => `<div class="t-proje"><strong>${k(p.baslik)}</strong><small>${k(p.yer)} · ${k(p.tur)}</small>
+            <p>${k(p.hikaye.durum)}${p.hikaye.sonuc ? " <b>Sonuç:</b> " + k(p.hikaye.sonuc) : ""}</p></div>`).join("")}
+
+          <h2>Çalışma modelimiz</h2>
+          <div class="t-adimlar">
+            <div><strong>1. Keşif ve tespit</strong>Yapı yerinde incelenir, suyun ve hasarın kaynağı belirlenir.</div>
+            <div><strong>2. Raporlama</strong>Yöntem, kapsam ve süre yazılı olarak sunulur.</div>
+            <div><strong>3. Uygulama</strong>İşler planlı ve kontrollü şekilde yürütülür.</div>
+            <div><strong>4. Teslim ve takip</strong>Sonuç birlikte kontrol edilir ve takip edilir.</div>
+          </div>
+
+          <h2>Referanslarımız</h2>
+          <ul class="t-referanslar">${A.referanslar.map((r) => `<li>${k(r.ad)}</li>`).join("")}</ul>
+        </div>
+        <footer class="t-iletisim">${iletisim}</footer>`;
+    })();
+  </script>
+</body>
+</html>

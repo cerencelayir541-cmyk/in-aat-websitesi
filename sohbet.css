@@ -1,0 +1,47 @@
+/* Sohbet asistanı: renkler stil.css'teki değişkenlerden gelir */
+.sohbet { position: fixed; right: 18px; bottom: 18px; z-index: 60; font-size: .95rem; }
+
+.sohbet-dugme { width: 58px; height: 58px; border-radius: 50%; border: 0; cursor: pointer; background: var(--lacivert); color: var(--beyaz); box-shadow: 0 8px 24px rgba(11,33,64,.35); display: grid; place-items: center; transition: transform .2s, background .2s; }
+.sohbet-dugme:hover { background: var(--lacivert-3); transform: translateY(-2px); }
+.sohbet-dugme svg { width: 26px; height: 26px; }
+.sohbet.acik .sohbet-dugme svg { display: none; }
+.sohbet.acik .sohbet-dugme::before { content: "×"; font-size: 2rem; line-height: 1; }
+
+.sohbet-pencere { position: absolute; right: 0; bottom: 72px; width: 360px; height: min(540px, calc(100vh - 120px)); background: var(--beyaz); border-radius: 16px; box-shadow: 0 18px 50px rgba(11,33,64,.25); display: flex; flex-direction: column; overflow: hidden; border: 1px solid var(--gri-2); }
+.sohbet-pencere[hidden] { display: none; }
+
+.sohbet-ust { display: flex; align-items: center; gap: 12px; padding: 14px 16px; background: var(--lacivert); color: var(--beyaz); }
+.sohbet-ari { width: 34px; height: 34px; color: var(--beyaz); --ari-cizgi: var(--lacivert); flex: none; }
+.sohbet-ust div { display: flex; flex-direction: column; line-height: 1.2; flex: 1; }
+.sohbet-ust small { opacity: .7; font-size: .78rem; }
+.sohbet-kapat { background: none; border: 0; color: var(--beyaz); font-size: 1.6rem; line-height: 1; cursor: pointer; padding: 4px 8px; opacity: .8; }
+.sohbet-kapat:hover { opacity: 1; }
+
+.sohbet-akis { flex: 1; overflow-y: auto; padding: 16px; display: flex; flex-direction: column; gap: 10px; background: var(--gri-1); overscroll-behavior: contain; }
+.balon { max-width: 85%; padding: 10px 14px; border-radius: 14px; line-height: 1.45; white-space: pre-line; overflow-wrap: anywhere; }
+.balon.bot { background: var(--beyaz); color: var(--metin); border: 1px solid var(--gri-2); border-bottom-left-radius: 4px; align-self: flex-start; }
+.balon.ben { background: var(--lacivert); color: var(--beyaz); border-bottom-right-radius: 4px; align-self: flex-end; }
+.balon.yaziyor { color: var(--metin-acik); letter-spacing: .2em; }
+.balon-baglantilar { display: flex; flex-direction: column; gap: 6px; margin-top: 10px; }
+.balon-baglantilar a { display: block; padding: 8px 12px; border-radius: 8px; background: var(--gri-1); color: var(--lacivert); font-weight: 600; font-size: .88rem; }
+.balon-baglantilar a:hover { background: var(--gri-2); }
+
+.oneriler { display: flex; flex-wrap: wrap; gap: 6px; }
+.oneriler button { font: inherit; font-size: .84rem; padding: 7px 12px; border-radius: 20px; border: 1px solid var(--lacivert-3); background: var(--beyaz); color: var(--lacivert); cursor: pointer; }
+.oneriler button:hover { background: var(--lacivert); color: var(--beyaz); }
+
+.sohbet-form { display: flex; gap: 8px; padding: 10px 12px; border-top: 1px solid var(--gri-2); background: var(--beyaz); }
+.sohbet-form input { flex: 1; min-width: 0; font: inherit; font-size: 16px; padding: 10px 12px; border: 1px solid var(--gri-2); border-radius: 10px; background: var(--gri-1); }
+.sohbet-form input:focus { outline: 2px solid var(--lacivert-3); outline-offset: 0; background: var(--beyaz); }
+.sohbet-form button { width: 44px; border: 0; border-radius: 10px; background: var(--lacivert); color: var(--beyaz); cursor: pointer; font-size: 1rem; }
+.sohbet-not { margin: 0; padding: 0 12px 10px; font-size: .7rem; color: var(--metin-acik); text-align: center; background: var(--beyaz); }
+
+/* WhatsApp düğmesi sohbet düğmesinin üstüne alınır */
+body.sohbet-var .whatsapp { bottom: 90px; }
+
+/* Telefon: pencere tüm ekranı kaplar */
+@media (max-width: 600px) {
+  .sohbet { right: 14px; bottom: 14px; }
+  .sohbet-pencere { position: fixed; inset: 0; width: auto; height: auto; border-radius: 0; border: 0; }
+  .sohbet.acik .sohbet-dugme { display: none; }
+}
