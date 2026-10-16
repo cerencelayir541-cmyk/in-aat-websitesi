@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zemin Mekaniği ve Yapı Güçlendirme</title>
+  <meta name="description" content="40 yıllık tecrübeyle zemin suyu drenajı, bodrum su ıslahı ve betonarme güçlendirme.">
+  <!-- TASLAK: Site bitene kadar arama motorlarında listelenmesin. Yayına hazır olunca bu satır silinecek. -->
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stil.css">
+  <link rel="stylesheet" href="sohbet.css">
+</head>
+<body>
+  <a href="#icerik" class="icerige-gec">İçeriğe geç</a>
+
+  <!-- Arı simgesi: tek yerde tanımlanır, logoda ve başka yerlerde tekrar kullanılır -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="ari" viewBox="0 0 64 64">
+      <path d="M32 3 57 17.5v29L32 61 7 46.5v-29Z" fill="none" stroke="currentColor" stroke-width="3"/>
+      <ellipse cx="24" cy="24" rx="8" ry="5.5" transform="rotate(-30 24 24)" fill="currentColor" opacity=".45"/>
+      <ellipse cx="40" cy="24" rx="8" ry="5.5" transform="rotate(30 40 24)" fill="currentColor" opacity=".45"/>
+      <ellipse cx="32" cy="36" rx="8.5" ry="12" fill="currentColor"/>
+      <path d="M24.2 33h15.6M23.8 39h16.4" stroke="var(--ari-cizgi, #0b2140)" stroke-width="2.6"/>
+      <circle cx="32" cy="22" r="4.5" fill="currentColor"/>
+      <path d="M30 18.5 27 14M34 18.5 37 14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+    </symbol>
+  </svg>
+
+  <header class="ust" id="ust">
+    <div class="kap ust-ic">
+      <a href="#giris" class="logo" aria-label="Ana sayfa">
+        <svg class="logo-ari"><use href="#ari"/></svg>
+        <span class="logo-yazi">
+          <strong data-ayar="firma.ad"></strong>
+          <small data-ayar="firma.altBaslik"></small>
+        </span>
+      </a>
+      <nav class="menu" id="menu" aria-label="Ana menü">
+        <a href="#hakkimizda">Hakkımızda</a>
+        <a href="#hizmetler">Hizmetlerimiz</a>
+        <a href="#projeler">Projeler</a>
+        <a href="#referanslar">Referanslar</a>
+        <a href="#iletisim" class="dugme dugme-acik">Teklif alın</a>
+      </nav>
+      <button class="menu-ac" id="menuAc" aria-label="Menüyü aç" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="icerik" tabindex="-1">
+    <!-- GİRİŞ -->
+    <section class="giris" id="giris">
+      <div class="giris-arka" style="background-image:url('gorseller/giris-santiye.jpg')"></div>
+      <div class="kap giris-ic">
+        <p class="etiket"><span class="cizgi"></span>Zemin & Yapı / <span data-ayar="firma.bolge"></span></p>
+        <h1><span data-ayar="firma.deneyimYili"></span> yıllık tecrübe.<br>Sağlam zemin, güvenli yapı.</h1>
+        <p class="giris-metin">Temel ve bodrumlara sızan suların kalıcı ıslahından betonarme güçlendirmeye kadar, <span data-ayar="firma.bolge"></span> genelinde yerinde tespit ve uygulama.</p>
+        <div class="dugmeler">
+          <a href="#hizmetler" class="dugme dugme-acik">Hizmetlerimiz</a>
+          <a href="#iletisim" class="dugme dugme-cerceve">Ücretsiz keşif isteyin</a>
+        </div>
+
+        <div class="rakamlar">
+          <div><strong><span data-ayar="firma.deneyimYili"></span>+</strong><span>Yıllık tecrübe</span></div>
+          <div><strong id="referansSayisi"></strong><span>Kurumsal referans</span></div>
+          <div><strong data-ayar="firma.bolge"></strong><span>Hizmet bölgesi</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GÜVEN ŞERİDİ -->
+    <div class="serit">
+      <div class="kap serit-ic">
+        <span>✓ <span data-ayar="firma.kurulusMetni"></span></span>
+        <span>✓ <span data-ayar="firma.bolge"></span> genelinde hizmet</span>
+        <span>✓ Kamu ve özel sektör projeleri</span>
+        <span>✓ Yerinde tespit ve raporlama</span>
+      </div>
+    </div>
+
+    <!-- HAKKIMIZDA -->
+    <section class="bolum bolum-gri" id="hakkimizda">
+      <div class="kap hakkimizda">
+        <div class="hakkimizda-gorsel">
+          <img src="gorseller/hakkimizda.jpg" alt="Temel donatı imalatı yapılan şantiye" loading="lazy">
+          <div class="rozet"><strong><span data-ayar="firma.deneyimYili"></span></strong><span>yıllık<br>tecrübe</span></div>
+        </div>
+        <div>
+          <p class="ust-baslik">Hakkımızda</p>
+          <h2>Her sahada aynı mühendislik disiplini</h2>
+          <p><span data-ayar="firma.deneyimYili"></span> yılı aşkın süredir <span data-ayar="firma.bolge"></span> genelinde konutlardan fabrikalara, belediye tesislerinden tarihi yapılara kadar pek çok binada zemin suyu ve yapı güçlendirme çalışmaları yürütüyoruz.</p>
+          <p>Önce sorunun kaynağını tespit ediyor, sonra yapıya ve zemine uygun yöntemi seçiyoruz. Yaptığımız işi raporluyor, sonucunu yapı sahibiyle birlikte takip ediyoruz.</p>
+          <div class="ozellikler">
+            <div><strong>Tecrübe</strong><span>Uzun yılların saha bilgisi</span></div>
+            <div><strong>Güven</strong><span>Kamu ve kurumsal referanslar</span></div>
+            <div><strong>Şeffaflık</strong><span>Açık kapsam, düzenli bilgilendirme</span></div>
+          </div>
+          <a href="tanitim.html" class="tanitim-bag">Firma tanıtım dosyasını görüntüle / PDF indir →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- HİZMETLER -->
+    <section class="bolum" id="hizmetler">
+      <div class="kap">
+        <div class="bolum-bas">
+          <p class="ust-baslik">Uzmanlık alanlarımız</p>
+          <h2>Zeminden taşıyıcıya kalıcı çözümler</h2>
+          <p class="bolum-metin">Sorunun belirtisini değil kaynağını çözeriz. Her iş, yerinde inceleme ile başlar.</p>
+        </div>
+        <div class="kartlar" id="hizmetListesi"></div>
+      </div>
+    </section>
+
+    <!-- ÇALIŞMA MODELİ -->
+    <section class="bolum bolum-koyu">
+      <div class="kap">
+        <div class="bolum-bas">
+          <p class="ust-baslik">Çalışma modelimiz</p>
+          <h2>Keşiften teslime</h2>
+        </div>
+        <ol class="adimlar">
+          <li><span>01</span><strong>Keşif ve tespit</strong><p>Yapı yerinde incelenir, suyun ve hasarın kaynağı belirlenir.</p></li>
+          <li><span>02</span><strong>Raporlama</strong><p>Uygulanacak yöntem, kapsam ve süre açıkça yazılı olarak sunulur.</p></li>
+          <li><span>03</span><strong>Uygulama</strong><p>İşler planlı ve kontrollü şekilde, yapı kullanımı gözetilerek yürütülür.</p></li>
+          <li><span>04</span><strong>Teslim ve takip</strong><p>Sonuç birlikte kontrol edilir, sonraki dönemde takip edilir.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- PROJELER -->
+    <section class="bolum" id="projeler">
+      <div class="kap">
+        <div class="bolum-bas">
+          <p class="ust-baslik">Seçilmiş projeler</p>
+          <h2>Standardımızı belirleyen işler</h2>
+        </div>
+        <div class="projeler" id="projeListesi"></div>
+      </div>
+    </section>
+
+    <!-- SAHADAN -->
+    <section class="bolum bolum-gri">
+      <div class="kap">
+        <div class="bolum-bas">
+          <p class="ust-baslik">Sahadan</p>
+          <h2>Uygulamalarımızdan kareler</h2>
+        </div>
+        <div class="galeri">
+          <img src="gorseller/banglades-17.jpg" alt="Kolon ve kirişlerin çelik lamalarla güçlendirilmesi" loading="lazy">
+          <img src="gorseller/saha-hendek.jpg" alt="Hendeğe drenaj borusu döşenmesi" loading="lazy">
+          <img src="gorseller/banglades-19.jpg" alt="Çelik elemanların kaynakla birleştirilmesi" loading="lazy">
+          <img src="gorseller/saha-boru.jpg" alt="Drenaj borusunun kazı alanına indirilmesi" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- REFERANSLAR -->
+    <section class="bolum" id="referanslar">
+      <div class="kap">
+        <div class="referans-bas">
+          <div class="bolum-bas">
+            <p class="ust-baslik">Referanslarımız</p>
+            <h2>Birlikte çalıştığımız kurumlar</h2>
+            <p class="bolum-metin"><span data-ayar="firma.deneyimYili"></span> yıl boyunca kamu kurumlarından okullara, fabrikalardan tarihi yapılara kadar pek çok kurumun güvenini kazandık.</p>
+          </div>
+          <div class="referans-rozet">
+            <strong id="referansSayisi2"></strong>
+            <span>kurumsal referans</span>
+          </div>
+        </div>
+        <ul class="referanslar" id="referansListesi"></ul>
+      </div>
+    </section>
+
+    <!-- BELİRTİLER -->
+    <section class="bolum bolum-gri" id="hizmetBulucu">
+      <div class="kap belirti">
+        <div>
+          <p class="ust-baslik">Hizmet bulucu</p>
+          <h2>Binanızda hangisini görüyorsunuz?</h2>
+          <p class="bolum-metin">Bir belirti seçin, hangi hizmetimizle ilgili olabileceğini gösterelim. Kesin tespit her zaman yerinde inceleme ile yapılır.</p>
+          <div class="bulucu-sonuc" id="bulucuSonuc" aria-live="polite">
+            <p class="bulucu-bos">Listeden bir belirti seçtiğinizde ilgili hizmet burada görünür.</p>
+          </div>
+        </div>
+        <ul class="belirti-liste" id="belirtiListesi"></ul>
+      </div>
+    </section>
+
+    <!-- İLETİŞİM -->
+    <section class="bolum bolum-koyu" id="iletisim">
+      <div class="kap iletisim">
+        <div>
+          <p class="ust-baslik">Projenizi konuşalım</p>
+          <h2>Binanızı anlatın, birlikte bakalım</h2>
+          <p class="bolum-metin">Sorunu kısaca yazın veya bizi arayın; keşif için size dönüş yapalım.</p>
+          <ul class="iletisim-bilgi">
+            <li><span>Telefon</span><a data-iletisim="telefon"></a></li>
+            <li><span>E-posta</span><a data-iletisim="eposta"></a></li>
+            <li><span>Hizmet bölgesi</span><strong><span data-ayar="firma.bolge"></span> geneli</strong></li>
+            <li><span>Çalışma saatleri</span><strong data-ayar="iletisim.calismaSaatleri"></strong></li>
+          </ul>
+        </div>
+        <form class="form" id="iletisimFormu" novalidate>
+          <label>Adınız Soyadınız<input name="ad" required autocomplete="name"></label>
+          <label>Telefon<input name="telefon" type="tel" required autocomplete="tel"></label>
+          <label>İlçe<input name="ilce" placeholder="Örn: Kadıköy"></label>
+          <label>Konu
+            <select name="konu" id="konuSecimi"></select>
+          </label>
+          <label class="tam">Mesajınız<textarea name="mesaj" rows="4" required placeholder="Binanızdaki sorunu kısaca anlatın"></textarea></label>
+          <input type="text" name="_bot" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
+          <label class="onay tam">
+            <input type="checkbox" name="kvkk" required>
+            <span><a href="kvkk.html" target="_blank" rel="noopener">Kişisel verilerin işlenmesine ilişkin aydınlatma metnini</a> okudum. Bilgilerimin yalnızca teklif talebime dönüş yapılması için kullanılmasını kabul ediyorum.</span>
+          </label>
+          <div class="form-dugmeler tam">
+            <button type="submit" name="kanal" value="whatsapp" class="dugme dugme-wp">WhatsApp ile gönder</button>
+            <button type="submit" name="kanal" value="eposta" class="dugme dugme-acik">E-posta ile gönder</button>
+          </div>
+          <p class="form-not tam" id="formNot" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="alt">
+    <div class="kap alt-ic">
+      <div>
+        <a href="#giris" class="logo">
+          <svg class="logo-ari"><use href="#ari"/></svg>
+          <span class="logo-yazi"><strong data-ayar="firma.ad"></strong><small data-ayar="firma.altBaslik"></small></span>
+        </a>
+        <p><span data-ayar="firma.kurulusMetni"></span> ile <span data-ayar="firma.bolge"></span> genelinde hizmet.</p>
+      </div>
+      <div>
+        <h3>Menü</h3>
+        <a href="#hakkimizda">Hakkımızda</a><a href="#hizmetler">Hizmetlerimiz</a><a href="#projeler">Projeler</a><a href="#referanslar">Referanslar</a><a href="tanitim.html">Tanıtım dosyası (PDF)</a>
+      </div>
+      <div>
+        <h3>İletişim</h3>
+        <a data-iletisim="telefon"></a>
+        <a data-iletisim="eposta"></a>
+        <span data-ayar="iletisim.adres"></span>
+      </div>
+    </div>
+    <div class="kap alt-son">© <span id="yil"></span> <span data-ayar="firma.ad"></span>. Tüm hakları saklıdır.</div>
+  </footer>
+
+  <dialog class="hikaye" id="hikayePencere" aria-labelledby="hikayeBaslik">
+    <button type="button" class="hikaye-kapat" data-kapat aria-label="Kapat">×</button>
+    <div id="hikayeIcerik"></div>
+  </dialog>
+
+  <a class="whatsapp" id="whatsapp" hidden aria-label="WhatsApp ile yazın">WhatsApp</a>
+
+  <script src="ayarlar.js"></script>
+  <script src="site.js"></script>
+  <script src="sohbet.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+REFERANS LOGOLARI KLASÖRÜ
+=========================
+
+Bu klasör, sitedeki "Birlikte Çalıştığımız Kurumlar" bölümünde görünecek kurum logoları içindir.
+
+LOGO NASIL EKLENİR?
+1. Logo dosyasını bu klasöre koyun.
+   - Tercihen PNG (arka planı şeffaf) veya SVG.
+   - En az 400 piksel genişlikte, net bir dosya olsun.
+   - Dosya adında Türkçe karakter ve boşluk kullanmayın. Örnek: umraniye-belediyesi.png
+2. Site klasöründeki "ayarlar.js" dosyasını açın.
+3. "referanslar" listesinde ilgili kurumun satırını bulun.
+4. logo: "" kısmına dosya adını yazın. Örnek: logo: "umraniye-belediyesi.png"
+
+Logonun boyutu ve oranı site tarafından otomatik ayarlanır, logo bozulmaz.
+Logo eklenmeyen kurumların adı yazı olarak görünmeye devam eder.
+
+YENİ KURUM EKLEMEK
+ayarlar.js içindeki listeye aynı düzende yeni bir satır ekleyin:
+    { ad: "Kurum Adı", tur: "Kamu", logo: "" },
+
+ÖNEMLİ: KULLANIM İZNİ
+Kurum logoları o kurumlara aittir (tescilli marka olabilir).
+Bir logoyu sitede kullanmadan önce kurumdan yazılı ya da e-posta ile izin alın.
+Özellikle belediye ve resmî kurumların amblemleri için bu izin gereklidir.
+İzin yoksa logo eklemeyin; kurumun adının yazı olarak görünmesi yeterlidir.
