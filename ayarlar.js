@@ -6,8 +6,8 @@
 */
 const AYARLAR = {
   firma: {
-    ad: "FİRMA ADI",                 // Örn: "Arı Yapı Mühendislik"
-    kisaAd: "FİRMA",                 // Menüde logonun yanında görünür
+    ad: "Ceları Yapı",
+    kisaAd: "Ceları",
     altBaslik: "Zemin Mekaniği & Yapı Güçlendirme",
     deneyimYili: 40,
     bolge: "İstanbul",
