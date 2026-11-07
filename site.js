@@ -37,6 +37,23 @@
     wa.hidden = false;
   }
 
+  // Harita: Google Haritalar yalnızca ziyaretçi "Haritayı göster"e basınca yüklenir
+  const haritaYeri = (A.iletisim.harita || "").trim();
+  if (haritaYeri) {
+    const harita = document.getElementById("harita");
+    const q = encodeURIComponent(haritaYeri);
+    document.getElementById("haritaYol").href = "https://www.google.com/maps/dir/?api=1&destination=" + q;
+    harita.hidden = false;
+    document.getElementById("haritaGoster").addEventListener("click", () => {
+      const cerceve = document.createElement("iframe");
+      cerceve.src = "https://maps.google.com/maps?q=" + q + "&z=16&output=embed";
+      cerceve.title = "Ofis konumu haritası";
+      cerceve.loading = "lazy";
+      cerceve.referrerPolicy = "no-referrer-when-downgrade";
+      document.getElementById("haritaKapak").replaceWith(cerceve);
+    });
+  }
+
   // Hizmet kartları
   document.getElementById("hizmetListesi").innerHTML = A.hizmetler.map((h, i) => `
     <article class="kart">

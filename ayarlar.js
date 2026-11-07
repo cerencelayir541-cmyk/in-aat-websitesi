@@ -17,7 +17,10 @@ const AYARLAR = {
   iletisim: {
     telefon: "",                     // Örn: "0532 123 45 67"  (boş kalırsa "Yakında eklenecek" yazar)
     eposta: "",                      // Örn: "info@firmaadi.com"
-    adres: "İstanbul",
+    adres: "Reşitpaşa Mah. Katar Cad. İTÜ Arı Teknokent 2 Binası, Sarıyer / İstanbul",
+    ofisAdi: "İTÜ Arı Teknokent",
+    // Haritada aranacak yer (Google Haritalar'a yazılır gibi). Boş kalırsa harita gösterilmez.
+    harita: "İTÜ Arı Teknokent Arı 2 Binası, Reşitpaşa, Katar Cd., Sarıyer, İstanbul",
     calismaSaatleri: "",             // Örn: "Pazartesi – Cumartesi, 09:00 – 18:00"
     whatsapp: "",                    // Boş kalırsa yukarıdaki telefon numarası kullanılır
     // Teklif formunun e-postaya ulaşması için form servisinin adresi (örn. Formspree):

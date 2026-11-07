@@ -67,8 +67,20 @@
       })
     },
     {
+      kelimeler: ["adres", "ofis", "konum", "yol tarifi", "neredesiniz", "nerede bulunuyor", "teknokent"],
+      yanit: () => {
+        const adres = (A.iletisim.adres || "").trim();
+        const yer = (A.iletisim.harita || "").trim();
+        if (!adres || adres === A.firma.bolge) {
+          return { metin: "Ofis adresimiz henüz sitede yayınlanmadı. İletişim formundan bize ulaşabilirsiniz.", baglantilar: [{ etiket: "📝 İletişim formuna git", href: "#iletisim" }] };
+        }
+        const b = [{ etiket: "📍 Haritada gör", href: "#harita" }];
+        if (yer) b.push({ etiket: "🧭 Yol tarifi al", href: "https://www.google.com/maps/dir/?api=1&destination=" + encodeURIComponent(yer) });
+        return { metin: `Ofisimiz ${A.iletisim.ofisAdi ? A.iletisim.ofisAdi + "'te: " : ""}${adres}.`, baglantilar: b };
+      }
+    },
+    {
       kelimeler: ["iletisim", "telefon", "numara", "ara ", "arayin", "arayabilir", "eposta", "e posta", "mail", "ulasabilir", "ulasmak", "size ulas", "whatsapp"],
-      zayif: ["adres"],
       yanit: () => {
         const eksik = [];
         if (!tel()) eksik.push("telefon numarası");

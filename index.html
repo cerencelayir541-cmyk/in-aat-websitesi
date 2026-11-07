@@ -61,7 +61,7 @@
         <p class="giris-metin">Temel ve bodrumlara sızan suların kalıcı ıslahından betonarme güçlendirmeye kadar, <span data-ayar="firma.bolge"></span> genelinde yerinde tespit ve uygulama.</p>
         <div class="dugmeler">
           <a href="#hizmetler" class="dugme dugme-acik">Hizmetlerimiz</a>
-          <a href="#iletisim" class="dugme dugme-cerceve">Ücretsiz keşif isteyin</a>
+          <a href="#iletisim" class="dugme dugme-cerceve">Keşif isteyin</a>
         </div>
 
         <div class="rakamlar">
@@ -78,7 +78,7 @@
         <span>✓ <span data-ayar="firma.kurulusMetni"></span></span>
         <span>✓ <span data-ayar="firma.bolge"></span> genelinde hizmet</span>
         <span>✓ Kamu ve özel sektör projeleri</span>
-        <span>✓ Yerinde tespit ve raporlama</span>
+        <span>✓ Mühendislik ofisi: <span data-ayar="iletisim.ofisAdi"></span></span>
       </div>
     </div>
 
@@ -94,6 +94,7 @@
           <h2>Her sahada aynı mühendislik disiplini</h2>
           <p><span data-ayar="firma.deneyimYili"></span> yılı aşkın süredir <span data-ayar="firma.bolge"></span> genelinde konutlardan fabrikalara, belediye tesislerinden tarihi yapılara kadar pek çok binada zemin suyu ve yapı güçlendirme çalışmaları yürütüyoruz.</p>
           <p>Önce sorunun kaynağını tespit ediyor, sonra yapıya ve zemine uygun yöntemi seçiyoruz. Yaptığımız işi raporluyor, sonucunu yapı sahibiyle birlikte takip ediyoruz.</p>
+          <p class="ofis-not"><strong>Mühendislik ofisimiz</strong> <span data-ayar="iletisim.ofisAdi"></span> yerleşkesinde yer alıyor.</p>
           <div class="ozellikler">
             <div><strong>Tecrübe</strong><span>Uzun yılların saha bilgisi</span></div>
             <div><strong>Güven</strong><span>Kamu ve kurumsal referanslar</span></div>
@@ -204,7 +205,20 @@
             <li><span>E-posta</span><a data-iletisim="eposta"></a></li>
             <li><span>Hizmet bölgesi</span><strong><span data-ayar="firma.bolge"></span> geneli</strong></li>
             <li><span>Çalışma saatleri</span><strong data-ayar="iletisim.calismaSaatleri"></strong></li>
+            <li><span>Ofis</span><strong data-ayar="iletisim.ofisAdi"></strong><small class="adres" data-ayar="iletisim.adres"></small></li>
           </ul>
+          <!-- Harita: sayfa açılınca yüklenmez; ziyaretçi düğmeye basınca açılır (hız ve gizlilik için) -->
+          <div class="harita" id="harita" hidden>
+            <div class="harita-kapak" id="haritaKapak">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z" fill="currentColor"/></svg>
+              <div>
+                <strong data-ayar="iletisim.ofisAdi"></strong>
+                <span>Sarıyer, İstanbul</span>
+              </div>
+              <button type="button" class="dugme dugme-acik" id="haritaGoster">Haritayı göster</button>
+            </div>
+            <a class="harita-yol" id="haritaYol" target="_blank" rel="noopener">Yol tarifi al →</a>
+          </div>
         </div>
         <form class="form" id="iletisimFormu" novalidate>
           <label>Adınız Soyadınız<input name="ad" required autocomplete="name"></label>

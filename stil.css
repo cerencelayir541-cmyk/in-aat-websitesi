@@ -115,6 +115,8 @@ p { margin: 0 0 1em; }
 .rozet { position: absolute; right: -18px; bottom: -18px; background: var(--lacivert); color: var(--beyaz); padding: 20px 24px; border-radius: var(--yaricap); display: flex; align-items: center; gap: 12px; box-shadow: var(--golge); }
 .rozet strong { font-size: 2.6rem; font-weight: 800; line-height: 1; }
 .rozet > span { font-size: .85rem; line-height: 1.25; opacity: .85; }
+.ofis-not { padding: 12px 16px; border-left: 3px solid var(--lacivert); background: var(--beyaz); border-radius: 0 8px 8px 0; color: var(--metin) !important; }
+.ofis-not strong { color: var(--lacivert); }
 .ozellikler { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 28px; }
 .ozellikler div { border-top: 3px solid var(--lacivert); padding-top: 12px; }
 .ozellikler strong { display: block; color: var(--lacivert); }
@@ -196,6 +198,17 @@ p { margin: 0 0 1em; }
 .iletisim-bilgi li { display: flex; flex-direction: column; border-left: 3px solid var(--vurgu); padding-left: 14px; }
 .iletisim-bilgi li > span { font-size: .78rem; text-transform: uppercase; letter-spacing: .1em; color: rgba(255,255,255,.6); }
 .iletisim-bilgi a, .iletisim-bilgi strong { font-size: 1.05rem; font-weight: 600; }
+.iletisim-bilgi .adres { display: block; margin-top: 2px; font-size: .88rem; color: rgba(255,255,255,.7); font-weight: 400; }
+.harita { margin-top: 24px; border-radius: var(--yaricap); overflow: hidden; border: 1px solid rgba(255,255,255,.15); background: rgba(255,255,255,.05); }
+.harita[hidden] { display: none; }
+.harita iframe { display: block; width: 100%; height: 260px; border: 0; }
+.harita-kapak { display: flex; align-items: center; flex-wrap: wrap; gap: 14px; padding: 20px; min-height: 120px; }
+.harita-kapak svg { width: 36px; height: 36px; color: var(--vurgu); flex: none; }
+.harita-kapak div { display: flex; flex-direction: column; flex: 1; min-width: 140px; }
+.harita-kapak span { font-size: .85rem; color: rgba(255,255,255,.7); }
+.harita-kapak .dugme { padding: .6em 1.1em; }
+.harita-yol { display: block; padding: 12px 20px; border-top: 1px solid rgba(255,255,255,.12); font-weight: 600; font-size: .92rem; color: var(--vurgu); }
+.harita-yol:hover { color: var(--beyaz); }
 .bos { opacity: .55; font-style: italic; font-weight: 400 !important; }
 .form { background: var(--beyaz); color: var(--metin); padding: 32px; border-radius: var(--yaricap); display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 .form label { display: flex; flex-direction: column; gap: 6px; font-size: .85rem; font-weight: 600; color: var(--lacivert); }
